@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Swati Fitness</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="stylesheet" href="fitniss.css" />
+    <style>
+        body {
+            font-family: "Baloo Bhai 2", sans-serif;
+            margin: 0;
+            padding: 0;
+            background-image: url('gymbg.jpg');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 100%;
+            padding: 15px 50px;
+            box-sizing: border-box;
+            background: rgba(255, 255, 255, 0.8);
+        }
+
+        .left img {
+            width: 60px;
+            display: block;
+        }
+
+        .left {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            font-size: 18px;
+            font-weight: bold;
+            color: rgba(95, 4, 4, 0.7);
+        }
+
+        .mid ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            gap: 30px;
+        }
+
+        .mid li {
+            display: inline;
+        }
+
+        .mid a {
+            text-decoration: none;
+            color: rgb(90, 57, 15);
+            font-size: 18px;
+            font-weight: bold;
+        }
+
+        .mid a:hover {
+            text-decoration: underline;
+            color: gray;
+        }
+
+        .right .btn {
+            background-color: black;
+            color: white;
+            padding: 6px 16px;
+            border: 2px solid gray;
+            border-radius: 10px;
+            cursor: pointer;
+            font-size: 16px;
+            margin-left: 10px;
+        }
+
+        .right .btn:hover {
+            background-color: gray;
+        }
+
+        .container {
+            border: 2px solid red;
+            padding: 40px;
+            margin-top: 50px;
+            width: 350px;
+            border-radius: 28px;
+            background: rgba(255, 255, 255, 0.9);
+            text-align: center;
+        }
+
+        .form-group input, .form-group select {
+            width: 90%;
+            padding: 10px;
+            margin: 10px 0;
+            font-size: 16px;
+            border-radius: 6px;
+            border: 1px solid gray;
+        }
+
+        .btn1 {
+            display: block;
+            margin: auto;
+            background-color: #dacbcb;
+            border-radius: 4px;
+            width: 100px;
+            padding: 8px;
+            font-size: 16px;
+            cursor: pointer;
+            border: none;
+        }
+
+        .btn1:hover {
+            background-color: gray;
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <div class="left">
+            <img src="fitlogo.jpeg" alt="Logo">
+            <div>Swati Fitness</div>
+        </div>
+
+        <nav class="mid">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Fitness Calculator</a></li>
+                <li><a href="#">Contact Us</a></li>
+            </ul>
+        </nav>
+
+        <div class="right">
+            <button class="btn">Call Us Now</button>
+            <button class="btn">Email Us</button>
+        </div>
+    </header>
+
+    <div class="container">
+        <h1>Join the Best Gym in Mardan</h1>
+        <form action="irfan.php" method="POST">
+            <div class="form-group">
+                <input type="text" name="first_name" placeholder="Enter your first name" required>
+            </div>
+            <div class="form-group">
+                <input type="number" name="age" placeholder="Enter your age" required>
+            </div>
+            <div class="form-group">
+                <input type="text" name="locality" placeholder="Enter your locality" required>
+            </div>
+            <div class="form-group">
+                <select name="gender" required>
+                    <option value="">Select Gender</option>
+                    <option value="Male">Male</option>
+                    <option value="Female">Female</option>
+                    <option value="Others">Others</option>
+                </select>
+            </div>
+            <button type="submit" class="btn1">Submit</button>
+        </form>
+    </div>
+
+</body>
+
+</html>
